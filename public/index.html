@@ -1,241 +1,52 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <title>Ruby on Rails: Welcome aboard</title>
-    <style type="text/css" media="screen">
-      body {
-        margin: 0;
-        margin-bottom: 25px;
-        padding: 0;
-        background-color: #f0f0f0;
-        font-family: "Lucida Grande", "Bitstream Vera Sans", "Verdana";
-        font-size: 13px;
-        color: #333;
-      }
+<meta charset="utf-8">
+	<head>
+		<h1>Betty's Home!</h1>
+	</head>
 
-      h1 {
-        font-size: 28px;
-        color: #000;
-      }
+	<body>
+		<p><img src="profile.jpg" align="right"
+				width="30%"></p>
+	<p><ul>
+		<h1> 권 보 경  </h1>
+		<h2> Seoul National University </h2>
+		<h3> Computer Science & Engineering </h3>
+		<hr>
+		<h3>What I'm working on</h3>
+		<li>
+		<h5><a href="http://likelion.net">멋쟁이 사자처럼</a></h5></li>
+		<li><h5><a href="http://h2osnu.blogspot.kr">서울대학교 여성공학리더네트워크 H2O SNU</a></h5></li>
+		<li>달탐사로봇제작 동아리 SMERF</li>
+		<li>서울대학교 Running CLUB 달리ㅅF</li>
+		<br><hr>
+		<h3>2013 SPRING</h3>		
+		
+		<li><a href="http://chem.snu.ac.kr/" taget="_blank">CHEMISTRY</a></li>
+		<h5>숙제가 너무 많아서 힘들지만 졸업을 위해 듣는 중ㅠㅠ</h5>
+		
+		<li><a href="http://soar.snu.ac.kr/course/ds/20131/">Data Structure</a></li>
+		<h5>2학년 때 들었으면 훨씬 좋았을텐데 그래도 꽤 재밌게 듣는 중.<br>
+			다음 숙제는 100 점 받을거임</h5>
 
-      a  {color: #03c}
-      a:hover {
-        background-color: #03c;
-        color: white;
-        text-decoration: none;
-      }
+		<li><a href="http://cares.snu.ac.kr/?view=contents&menuN=290">COMPUTER ARCHITECTURE</a></li>
+		<h5>재밌을거라고 기대하고 들었는데 외계어가 떠다님ㅠㅡㅜ <br>
+			숙제가 너무 어렵지만 무려 5명의 조교님을 배정해주신 교수님의 사랑을 느끼는 중<3<3</h5>
 
+		<li><a href="http://etl.snu.ac.kr">IT-Leadership Seminar</a></li>
+		<h5>말씀을 너무 잘하시는 강사님 때문에 재밌게 듣는 중. 최용철님과 같이 듣는 수업!</h5>
 
-      #page {
-        background-color: #f0f0f0;
-        width: 750px;
-        margin: 0;
-        margin-left: auto;
-        margin-right: auto;
-      }
+		<li><a href="http://etl.snu.ac.kr">한국 정치의 분석과 이해</a></li>
+		<h5>처음엔 한국 정치의 역사가 너무 재밌었는데 점점 너무 생소한 내용이 나와서 지루...</h5>
 
-      #content {
-        float: left;
-        background-color: white;
-        border: 3px solid #aaa;
-        border-top: none;
-        padding: 25px;
-        width: 500px;
-      }
+		<li><a href="http://hypersonic.snu.ac.kr">항공우주공학개론</a></li>
+		<h5>RC비행기를 제작해서 날리는 수업! 교수님도 훈훈하시고 비행기 만드는 것도 너무 기대됨ㅎㅎ</h5>
+		
+		<br>
 
-      #sidebar {
-        float: right;
-        width: 175px;
-      }
-
-      #footer {
-        clear: both;
-      }
-
-      #header, #about, #getting-started {
-        padding-left: 75px;
-        padding-right: 30px;
-      }
-
-
-      #header {
-        background-image: url("assets/rails.png");
-        background-repeat: no-repeat;
-        background-position: top left;
-        height: 64px;
-      }
-      #header h1, #header h2 {margin: 0}
-      #header h2 {
-        color: #888;
-        font-weight: normal;
-        font-size: 16px;
-      }
-
-
-      #about h3 {
-        margin: 0;
-        margin-bottom: 10px;
-        font-size: 14px;
-      }
-
-      #about-content {
-        background-color: #ffd;
-        border: 1px solid #fc0;
-        margin-left: -55px;
-        margin-right: -10px;
-      }
-      #about-content table {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        font-size: 11px;
-        border-collapse: collapse;
-      }
-      #about-content td {
-        padding: 10px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-      }
-      #about-content td.name  {color: #555}
-      #about-content td.value {color: #000}
-
-      #about-content ul {
-        padding: 0;
-        list-style-type: none;
-      }
-
-      #about-content.failure {
-        background-color: #fcc;
-        border: 1px solid #f00;
-      }
-      #about-content.failure p {
-        margin: 0;
-        padding: 10px;
-      }
-
-
-      #getting-started {
-        border-top: 1px solid #ccc;
-        margin-top: 25px;
-        padding-top: 15px;
-      }
-      #getting-started h1 {
-        margin: 0;
-        font-size: 20px;
-      }
-      #getting-started h2 {
-        margin: 0;
-        font-size: 14px;
-        font-weight: normal;
-        color: #333;
-        margin-bottom: 25px;
-      }
-      #getting-started ol {
-        margin-left: 0;
-        padding-left: 0;
-      }
-      #getting-started li {
-        font-size: 18px;
-        color: #888;
-        margin-bottom: 25px;
-      }
-      #getting-started li h2 {
-        margin: 0;
-        font-weight: normal;
-        font-size: 18px;
-        color: #333;
-      }
-      #getting-started li p {
-        color: #555;
-        font-size: 13px;
-      }
-
-
-      #sidebar ul {
-        margin-left: 0;
-        padding-left: 0;
-      }
-      #sidebar ul h3 {
-        margin-top: 25px;
-        font-size: 16px;
-        padding-bottom: 10px;
-        border-bottom: 1px solid #ccc;
-      }
-      #sidebar li {
-        list-style-type: none;
-      }
-      #sidebar ul.links li {
-        margin-bottom: 5px;
-      }
-
-      .filename {
-        font-style: italic;
-      }
-    </style>
-    <script type="text/javascript">
-      function about() {
-        info = document.getElementById('about-content');
-        if (window.XMLHttpRequest)
-          { xhr = new XMLHttpRequest(); }
-        else
-          { xhr = new ActiveXObject("Microsoft.XMLHTTP"); }
-        xhr.open("GET","rails/info/properties",false);
-        xhr.send("");
-        info.innerHTML = xhr.responseText;
-        info.style.display = 'block'
-      }
-    </script>
-  </head>
-  <body>
-    <div id="page">
-      <div id="sidebar">
-        <ul id="sidebar-items">
-          <li>
-            <h3>Browse the documentation</h3>
-            <ul class="links">
-              <li><a href="http://guides.rubyonrails.org/">Rails Guides</a></li>
-              <li><a href="http://api.rubyonrails.org/">Rails API</a></li>
-              <li><a href="http://www.ruby-doc.org/core/">Ruby core</a></li>
-              <li><a href="http://www.ruby-doc.org/stdlib/">Ruby standard library</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-
-      <div id="content">
-        <div id="header">
-          <h1>Welcome aboard</h1>
-          <h2>You&rsquo;re riding Ruby on Rails!</h2>
-        </div>
-
-        <div id="about">
-          <h3><a href="rails/info/properties" onclick="about(); return false">About your application&rsquo;s environment</a></h3>
-          <div id="about-content" style="display: none"></div>
-        </div>
-
-        <div id="getting-started">
-          <h1>Getting started</h1>
-          <h2>Here&rsquo;s how to get rolling:</h2>
-
-          <ol>
-            <li>
-              <h2>Use <code>rails generate</code> to create your models and controllers</h2>
-              <p>To see all available options, run it without parameters.</p>
-            </li>
-
-            <li>
-              <h2>Set up a default route and remove <span class="filename">public/index.html</span></h2>
-              <p>Routes are set up in <span class="filename">config/routes.rb</span>.</p>
-            </li>
-
-            <li>
-              <h2>Create your database</h2>
-              <p>Run <code>rake db:create</code> to create your database. If you're not using SQLite (the default), edit <span class="filename">config/database.yml</span> with your username and password.</p>
-            </li>
-          </ol>
-        </div>
-      </div>
-
-      <div id="footer">&nbsp;</div>
-    </div>
-  </body>
+		<h3>CONTACT</h3> <h4><a href="kbk2289@gmail.com">kbk2289@gmail.com</a></h4><br>
+		<hr>
+		<br><br>
+		</p> 
+	</ul></p>
+	</body>
 </html>
